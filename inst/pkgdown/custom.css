@@ -1,0 +1,11 @@
+/* inst/pkgdown/custom.css */
+
+/* Adjust the font size for reference section titles */
+h2.reference-title, h3.reference-title {
+    font-size: 14px !important; /* Adjust to your desired size */
+}
+
+/* Adjust the font size for the reference section contents */
+div.reference-content {
+    font-size: 12px !important; /* Adjust to your desired size */
+}
