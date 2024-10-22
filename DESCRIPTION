@@ -2,8 +2,8 @@ Package: HDNRA
 Type: Package
 Title: High-Dimensional Location Testing with Normal-Reference
         Approaches
-Version: 2.0.0
-Date: 2024-10-16
+Version: 2.0.1
+Date: 2024-10-22
 Authors@R: c(person("Pengfei", "Wang", role = c("aut", "cre"),
                       email = "nie23.wp8738@e.ntu.edu.sg"), 
               person("Shuqi", "Luo", role = c("aut"),
@@ -33,6 +33,6 @@ LazyData: true
 Language: en-US
 Config/testthat/edition: 3
 NeedsCompilation: yes
-Packaged: 2024-10-18 09:24:54 UTC; yehe
+Packaged: 2024-10-22 06:45:12 UTC; yehe
 Repository: CRAN
-Date/Publication: 2024-10-18 09:40:02 UTC
+Date/Publication: 2024-10-22 08:20:06 UTC

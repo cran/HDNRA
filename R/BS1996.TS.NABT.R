@@ -3,7 +3,7 @@
 #' @description
 #' Bai and Saranadasa (1996)'s test for testing equality of two-sample high-dimensional mean vectors with assuming that two covariance matrices are the same.
 #'
-#' @usage BS1996.TS.NART(y1, y2)
+#' @usage BS1996.TS.NABT(y1, y2)
 #' @param y1 The data matrix (\eqn{n_1 \times p}) from the first population. Each row represents a \eqn{p}-dimensional observation.
 #' @param y2 The data matrix (\eqn{n_2 \times p}) from the second population. Each row represents a \eqn{p}-dimensional observation.
 #'
@@ -33,18 +33,18 @@
 #' dim(COVID19)
 #' group1 <- as.matrix(COVID19[c(2:19, 82:87), ]) ## healthy group
 #' group2 <- as.matrix(COVID19[-c(1:19, 82:87), ]) ## COVID-19 patients
-#' BS1996.TS.NART(group1,group2)
+#' BS1996.TS.NABT(group1,group2)
 #'
 #' @concept ts
 #' @export
 
-BS1996.TS.NART <- function(y1, y2) {
+BS1996.TS.NABT <- function(y1, y2) {
   if (ncol(y1) != ncol(y2)) {
     stop("y1 and y2 must have the same dimension!")
   }
 
   # Calculate test statistics using the provided C++ function
-  stats <- bs1996_ts_nart_cpp(y1, y2)
+  stats <- bs1996_ts_nabt_cpp(y1, y2)
   stat <- stats[1]
 
   # Calculate p-value
